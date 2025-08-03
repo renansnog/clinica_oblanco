@@ -1,0 +1,110 @@
+/* Configurações Gerais */
+/* Reset básico para remover margens e paddings padrões */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body { */
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+  box-sizing: border-box;
+}
+
+/* Menu */
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+header h1 {
+  font-size: 1.8em;
+  justify-content: center;
+}
+
+header {
+  background-color: #000;
+  color: white;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Informações da clínica */
+section {
+  padding: 60px 20px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section h2 {
+  font-size: 2px;
+  margin-bottom: 20px;
+}
+
+.sobre img {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin-top: 20px;
+}
+
+/* Banner */
+.banner {
+  background: linear-gradient(to right, #004aad, #0086ff);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.banner h2 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+}
+
+.banner .btn {
+  background-color: white;
+  color: #004aad;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.banner .btn:hover {
+  background-color: #f0f0f0;
+}
+
+/* Rodapé da página */
+footer {
+  background-color: #004aad;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
