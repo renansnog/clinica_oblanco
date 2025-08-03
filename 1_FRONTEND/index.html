@@ -22,14 +22,19 @@
         </nav>
       </div>
     </header>
+
     <!-- Banner -->
+
     <section class="banner">
       <div class="container">
-        <h2>Sorria com Confiança</h2>
-        <p>Tratamentos modernos com os melhores especialistas</p>
+        <h2 id="sorria">Sorria com Confiança</h2>
+        <p id="tratamentos">
+          Tratamentos modernos com os melhores especialistas
+        </p>
         <a href="#agendamento" class="btn">Agende sua consulta</a>
       </div>
     </section>
+
     <!-- Informações da Clínica -->
     <section id="sobre" class="sobre">
       <div class="container">
@@ -39,9 +44,14 @@
           confortável, profissionais qualificados e tecnologia de ponta,
           oferecemos o melhor cuidado ao seu sorriso.
         </p>
-        <img src="img/clinica-externa.jpg" alt="Foto da Clínica" />
+        <img
+          src="img/clinica-externa.jpg"
+          alt="Fachada da Clínica O'Blanco Odontologia Moderna"
+          id="fachada"
+        />
       </div>
     </section>
+
     <!-- Especialidades da Clínica -->
     <section id="especialidades" class="especialidades">
       <div class="especialidades">
@@ -69,15 +79,17 @@
         </blockquote>
       </div>
     </section>
+
     <!-- Contato -->
     <section id="contato" class="contato">
       <div class="container">
         <h2>Contato</h2>
-        <p>Telefone: (45) 99951-1030</p>
+        <p>Telefone: (45) 99946-0305</p>
         <p>Email: contato@oblanco.com</p>
-        <p>Endereço: Av. Central, 123 - Toledo/PR</p>
+        <p>Endereço: Rua Rui Barbosa, 1382 - Centro, Toledo/PR</p>
       </div>
     </section>
+
     <!-- Rodapé da página -->
     <footer>
       <div class="container">
@@ -89,3 +101,16 @@
     </footer>
   </body>
 </html>
+
+<!-- JS na imagem - Zoom -->
+<script>
+  const img = document.getElementById("fachada");
+
+  img.addEventListener("mouseover", () => {
+    img.style.transform = "scale(1.05)";
+  });
+
+  img.addEventListener("mouseout", () => {
+    img.style.transform = "scale(1)";
+  });
+</script>

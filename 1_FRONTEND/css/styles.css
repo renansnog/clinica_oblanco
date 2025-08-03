@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-body { */
+body {
   font-family: Arial, sans-serif;
   background-color: #f8f9fa;
   color: #333;
@@ -14,24 +14,25 @@ body { */
   box-sizing: border-box;
 }
 
-/* Menu */
+/* Cabeçalho do site (Menu) */
 header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200%;
+  max-width: 1200px;
   margin: auto;
   padding: 0 20px;
+  text-align: center;
 }
 
 header h1 {
   font-size: 1.8em;
   font-weight: 700;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header {
-  background-color: #5d7492;
+  background-color: #000;
   color: white;
   padding: 20px 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /*sombra mais leve */
@@ -41,6 +42,7 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 25px;
+  padding: 0;
 }
 
 nav a {
@@ -55,23 +57,55 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* Banner */
+#sorria,
+#tratamentos {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+#sorria {
+  color: #f8f9fa;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+#tratamentos {
+  color: #fff;
+  text-align: center;
+  font-size: 1.3rem;
+  margin-top: 12px;
+  font-weight: 400;
+}
+
 /* Informações da clínica */
 section {
   padding: 60px 20px;
+}
+
+section p,
+section ul,
+section blockquote {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
 }
 
 .container {
   width: 90%;
   max-width: 1000px;
   margin: auto;
+  text-align: center;
 }
 
 section h2 {
   font-size: 2rem; /* Comando rem proporciona tamanho maior */
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   color: #004aad;
   font-weight: 700;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
 }
 
 .sobre img {
@@ -80,19 +114,22 @@ section h2 {
   margin-top: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 section p {
   max-width: 700px;
   font-size: 1.1rem;
   line-height: 1.8;
-  color: #555;
-  margin-bottom: 20px;
+  color: #0d0c0c;
+  margin: 0 auto 20px auto;
+  text-align: center;
+  padding: 0;
 }
 
 /* Banner */
 .banner {
-  background: linear-gradient(to right, #004aad, #0086ff);
+  background: linear-gradient(to right, #233f5b, #4a4d4e);
   color: white;
   text-align: center;
   padding: 60px 20px;
@@ -101,6 +138,7 @@ section p {
 .banner h2 {
   font-size: 2.2em;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .banner .btn {
@@ -113,8 +151,27 @@ section p {
   display: inline-block;
   margin-top: 20px;
   font-size: 1.1rem;
-  box-shadow: 0 4px 8px rgba(255, 204, blue, 0.4);
+  box-shadow: 0 4px 8px rgba(255, 204, 0, 0.4);
   transition: background-color 0.3s ease, color 0.3s ease;
+  text-align: center;
+}
+
+.especialidades ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.especialidades li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  background-color: #000;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 8px;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #fff;
 }
 
 .banner .btn:hover {
@@ -123,10 +180,34 @@ section p {
   box-shadow: 0 6px 12px rgba(0, 74, 173, 0.6);
 }
 
+/* Contato */
+#contato .container {
+  text-align: center;
+}
+
+#contato h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #004aad;
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#contato p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+
 /* Rodapé da página */
 footer {
-  background-color: #004aad;
+  background-color: #233f5b;
   color: white;
   text-align: center;
   padding: 20px 10px;
+}
+
+/* <!-- JS na imagem - Zoom --> */
+#fachada {
+  transition: transform 0.3s ease;
 }
