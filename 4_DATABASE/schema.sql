@@ -32,3 +32,13 @@ INSERT INTO consultas (data_consulta, horario, descricao) VALUES
 INSERT INTO pacientes (id_CPF, nome, endereco, telefone, data_de_nascimento, pcd, id_Consulta) VALUES
 ('12345678901', 'Pedro da Silva', 'Rua A, 123', '(51) 99999-1234', '1985-05-10', 'Não', 1),
 ('98765432100', 'Maria Oliveira', 'Av. Central, 456', '(51) 98888-5678', '1990-02-20', 'Sim', 2);
+
+USE clinica_oblanco;
+
+CREATE TABLE IF NOT EXISTS administradores (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(50) NOT NULL UNIQUE,
+  password_hash VARCHAR(255) NOT NULL,
+  nome VARCHAR(100),
+  criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
